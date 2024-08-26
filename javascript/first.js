@@ -14,5 +14,5 @@ document.getElementById("dark").onclick = function(){
     document.body.style.backgroundColor = "black"
 }
 document.getElementById("light").onclick = function(){
-    document.body.style.backgroundColor = "white"
+    document.body.style.backgroundColor = "slategray"
 }
