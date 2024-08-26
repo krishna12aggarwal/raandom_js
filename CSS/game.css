@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+div{
+    display: flex;
+}
+#q{
+    width: 250px;
+    text-align: center;
+    background-color: slategray;
+    position: relative;
+    height: 250px;
+    
+}
+#w{
+ 
+    width: 250px;
+    text-align: center;
+    background-color: slategray;
+    position: relative;
+    height: 250px;
+    border-radius: 50%;
+    
+}
+

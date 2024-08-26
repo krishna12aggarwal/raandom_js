@@ -1,0 +1,36 @@
+#you{
+    width: 100%;
+    height: 100%;
+    display: flex;
+ 
+}
+#no{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 25px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+    color: rgb(0, 0, 0);
+    border: solid,black,14px;
+}
+#no:hover{
+    cursor: pointer;
+    border: dashed,black,36px;
+    background-color: green;
+    color: violet;
+    font-style: italic ;
+}
+body{
+    background-color: gray;
+}
+#time{
+    mix-blend-mode: multiply;
+    height: 120px;
+    font-weight: bold;
+    color: steelblue;
+   
+}

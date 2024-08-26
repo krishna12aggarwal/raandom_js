@@ -1,0 +1,9 @@
+*{
+    margin: 0%;
+}
+h1{
+    font-style: italic;
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 2%;
+}
