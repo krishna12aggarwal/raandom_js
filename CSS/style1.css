@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @font-face {
     font-family: krishna;
@@ -50,3 +51,57 @@ hr{
 @keyframes rotate{
     50%{transform: rotate(360deg)}
 }
+=======
+
+@font-face {
+    font-family: krishna;
+    src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+html,body{
+    width: 100%;
+   
+}
+body{
+   background-color: slategray;
+}
+h1{
+    font-family: krishna , Arial, Helvetica, sans-serif;
+    font-size: 57px;
+    border-style: dashed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    width: fit-content;
+    background-color: darkcyan;
+    margin-left: 5%;
+    border-width: 3px;
+}
+
+button{
+    border: 100%;
+    background-color: aqua;
+    border-radius: 15%;
+    font-size: large;
+    font-family: krishna, Helvetica, sans-serif;
+    margin-left: 48%;
+    border-style: dotted;
+     
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: red;
+    font-size: 40px ;
+    animation: rotate;
+    animation-duration: 5s;   
+    animation-iteration-count: infinite;
+}
+#email{
+    margin-left: 47%;
+}
+hr{
+    border: 2px solid pink;
+}
+@keyframes rotate{
+    50%{transform: rotate(360deg)}
+}
+>>>>>>> 0485022 (flip game has started. java script in progress)

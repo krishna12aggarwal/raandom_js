@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
     width: fit-content;
    
@@ -11,3 +12,18 @@ form{
     margin: auto;
     box-shadow: 10px,20px,40px;
 }
+=======
+h1{
+    width: fit-content;
+   
+}
+form{
+    background-color: antiquewhite;
+    width: fit-content;
+    box-shadow: 4px,3px,6px;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    box-shadow: 10px,20px,40px;
+}
+>>>>>>> 0485022 (flip game has started. java script in progress)

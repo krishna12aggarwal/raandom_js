@@ -1,0 +1,33 @@
+div{
+    border: 3px solid black;
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    
+    
+}
+
+h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+    height: auto;
+    width: auto;
+}
+#yo,#no,#yes{
+    display: flex;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+#no,#yes{
+    margin-top: 30px;
+}
