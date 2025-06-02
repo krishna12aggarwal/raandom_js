@@ -1,12 +1,12 @@
 
 let x;
-while(x == null)
-x = window.prompt("ENTER YOUR NAME")
+//while(x == null)
+//x = window.prompt("ENTER YOUR NAME")
  //let y = window.prompt("ENTER YOUR AGE")
 
 //console.log(y);
-x = x.toUpperCase().trim()
-window.alert("WELCOME "+x)
+//x = x.toUpperCase().trim()
+//window.alert("WELCOME "+x)
 
 //window.alert('CODE BY KRISHNA')
 

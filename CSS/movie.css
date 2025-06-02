@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+   
+ 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+ 
+
+
+}
+#movieInput {
+   border-radius: 22px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+width: 300px;
+background-color: white;
+opacity: 1;
+  width: 300px;
+  transition: all 0.6s ease;
+  color: black;
+
+}
+
+button {
+  border-radius: 22px;
+  border: solid 3px black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #00BFFF;
+  width: 120px;
+  height: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  transition: background-color 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #009acd;
+}
+
+#movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem; 
+    margin-top: 3rem
+}
+
+.view .poster {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease;
+  width: 100%;
+   margin-top: 2rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.view:hover {
+  transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 191, 255, 0.3);
+    cursor: pointer;
+   
+}
+.box{
+display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+button.loading{
+    opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+
+@keyframes spin{
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.chota{
+    width: fit-content;
+    transform: translateY(-80px) ;
+    background-color: #282828;
+    color: white;
+    opacity: 1;
+    transition: transform 0.6s ease;
+}
+#movieList.show{
+    opacity: 1;
+}
+.back{
+    position: absolute;
+    top: 20px;
+right: 20px;
+background-color: red;
+color: white;
+border: none;
+border-radius: 22px;
+padding: 10px 20px;
+font-size: 1rem;
+display: none;
+z-index: 999;
+cursor: pointer;
+}
+.back:hover{
+transform: scale(1.1);
+
+background-color: rgb(105, 1, 1);
+}
+.view{
+background-color: #2a2a2a;
+padding: 1rem;
+border-radius: 12px;
+width: 200px;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+box-shadow: 0 0 8px #00BFFF44;
+transition: transform 0.3s ease;
+text-align: center;
+
+
+}
+
+
