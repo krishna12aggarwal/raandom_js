@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIC TAK TOE</title>
-    <link rel="stylesheet" href="CSS/tick.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TIC TAC TOE</title>
+  <link rel="stylesheet" href="CSS/tick.css" />
 </head>
 <body>
-  <div id="main">
-    <div id="q1">
-        <h1 id="q"></h1>
-    </div>
-    <div id="q2">
-        <h1 id="w"></h1>
-    </div>
-    <div id="q3">
-        <h1 id="e"></h1>
-    </div>
-  </div >
-  <div id="main2">
-    <div id="q4">
-        <h1 id="r"></h1>
-    </div>
-    <div id="q5">
-        <h1 id="t"></h1>
-    </div>
-    <div id="q6">
-        <h1 id="y"></h1>
-    </div>
-</div>
-<div id="main3">
-    <div id="q7">
-        <h1 id="u"></h1>
-    </div>
-    <div id="q8">
-        <h1 id="i"></h1>
-    </div>
-    <div id="q9">
-        <h1 id="o"></h1>
-    </div>
-  </div>
- 
-  
 
+  
+  <div id="topRightContainer">
+    <div id="scoreboard">
+      <span>You: <span id="humanScore">0</span></span> |
+      <span>Computer: <span id="computerScore">0</span></span>
+    </div>
+   <button id="resetBtn">Reset</button>
+  </div>
+
+  
+  <div id="gameContainer">
+    <div id="board">
+      <div class="cell" id="q1"><h1></h1></div>
+      <div class="cell" id="q2"><h1></h1></div>
+      <div class="cell" id="q3"><h1></h1></div>
+      <div class="cell" id="q4"><h1></h1></div>
+      <div class="cell" id="q5"><h1></h1></div>
+      <div class="cell" id="q6"><h1></h1></div>
+      <div class="cell" id="q7"><h1></h1></div>
+      <div class="cell" id="q8"><h1></h1></div>
+      <div class="cell" id="q9"><h1></h1></div>
+    </div>
+    <p id="status">Your move!</p>
+  </div>
+
+  
+  <script src="javascript/tick.js"></script>
 </body>
-<script src="javascript/tick.js"></script>
 </html>

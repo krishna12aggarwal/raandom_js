@@ -1,11 +1,17 @@
 console.log("CODE BY KRISHNA");
-//window.alert("CODE BY KRISHNA")
-let x;
-let y;
-let z;
-document.getElementById("br").onclick = function(){
-    x = document.getElementById("u").value;
-    y = Math.PI*x*x;
+
+document.getElementById("br").onclick = function () {
+    const radiusInput = document.getElementById("u").value.trim();
+    const radius = parseFloat(radiusInput);
+
+
+    if (isNaN(radius) || radius <= 0) 
+    document.getElementById("answer").textContent = "Enter a valid positive number for radius.";
     
-    document.getElementById("answer").textContent = 'AREA = ' + y+ " cm";
-}
+else{
+
+    const area = Math.PI * radius * radius;
+    const formattedArea = area.toFixed(2);
+
+    document.getElementById("answer").textContent = `AREA = ${formattedArea} cm²`;}
+};

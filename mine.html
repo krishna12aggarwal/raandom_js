@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/mines.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mines</title>
+  <link rel="stylesheet" href="CSS/mines.css" />
 </head>
 <body>
-    <div id="first">
-        <div class="first" id="tile_1" >❓ </div><br>
-        <div class="first" id="tile_2"> ❓</div><br>
-        <div class="first" id="tile_3"> ❓</div><br>
-        <div class="first" id="tile_4"> ❓</div><br>
+  <div id="board">
+    <div class="row">
+      <div class="tile" id="tile_1">❓</div>
+      <div class="tile" id="tile_2">❓</div>
+      <div class="tile" id="tile_3">❓</div>
+      <div class="tile" id="tile_4">❓</div>
     </div>
-    <br>
-    <div  id="first">
-        <div class="first" id="tile_5">❓ </div><br>
-        <div class="first" id="tile_6"> ❓</div><br>
-        <div class="first" id="tile_7"> ❓</div><br>
-        <div class="first" id="tile_8"> ❓</div><br>
-    </div><br>
-    <div  id="first">
-        <div class="first " id="tile_9">❓ </div><br>
-        <div class="first " id="tile_10"> ❓</div><br>
-        
-        <div class="first" id="tile_11"> ❓ </div><br>
-        <div class="first" id="tile_12"> ❓ </div><br>
-    </div><br>
-    <div  id="first">
-        <div class="first" id="tile_13" > ❓ </div><br>
-        <div class="first" id="tile_14"> ❓ </div><br>
-        <div class="first" id="tile_15"> ❓ </div><br>
-        <div class="first" id="tile_16"> ❓ </div><br>
-    </div><br>
-    <audio src="audio/ding-36029.mp3" controls id="win"></audio>
-    <audio src="audio/080205_life-lost-game-over-89697.mp3" controls id="loss"></audio>
+    <div class="row">
+      <div class="tile" id="tile_5">❓</div>
+      <div class="tile" id="tile_6">❓</div>
+      <div class="tile" id="tile_7">❓</div>
+      <div class="tile" id="tile_8">❓</div>
+    </div>
+    <div class="row">
+      <div class="tile" id="tile_9">❓</div>
+      <div class="tile" id="tile_10">❓</div>
+      <div class="tile" id="tile_11">❓</div>
+      <div class="tile" id="tile_12">❓</div>
+    </div>
+    <div class="row">
+      <div class="tile" id="tile_13">❓</div>
+      <div class="tile" id="tile_14">❓</div>
+      <div class="tile" id="tile_15">❓</div>
+      <div class="tile" id="tile_16">❓</div>
+    </div>
+  </div>
+<button id="resetBtn">Reset Game</button>
+
+<div id="result" style="margin-top:10px; font-weight:bold; font-size:1.2rem;"></div>
+  <audio src="audio/ding-36029.mp3" id="win" preload="auto"></audio>
+  <audio src="audio/080205_life-lost-game-over-89697.mp3" id="loss" preload="auto"></audio>
+
+  <script src="javascript/mines.js"></script>
 </body>
-<script src="javascript/mines.js"></script>
 </html>

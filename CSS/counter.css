@@ -1,47 +1,57 @@
-#title{
- text-align: center;
- font-size: 100px;
- color:red;
- margin: 0%;
- margin-top: 10%;
- 
+#title {
+    text-align: center;
+    font-size: 100px;
+    color: red;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-weight: bold;
 }
-body{
-    background-color: antiquewhite
+
+body {
+background-color: #1e1e2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#out{
+
+#out {
     text-align: center;
     font-size: 50px;
     font-style: italic;
     color: #99FF99;
-    margin: 0%;
-    padding: 0%;
-    
-
+    margin: 0;
+    padding: 0;
 }
-div{
+
+div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: rgb(227, 140, 26);
+    background-color: transparent;
+    border: 2px solid rgb(227, 140, 26);
+    border-radius: 50%; /* circular buttons */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
    
-    margin: 0%;
-    width: fit-content;
-     display: flex;
-     margin-left: 42%;
-     
 }
-button{
-   margin-right: 4%;
-   border: solid, blue;
-   color: rgb(227, 140, 26);
-   border-radius: 50%;
 
-}
-button:hover{
+button:hover {
     cursor: pointer;
+    background-color: rgb(227, 140, 26);
     color: black;
-}
-img:hover{
-     cursor: crosshair;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(227, 140, 26);
 }
 
-h2{
-    color: green;
-}
+
+
+

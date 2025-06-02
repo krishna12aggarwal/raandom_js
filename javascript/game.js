@@ -1,64 +1,46 @@
-x = 0, y = 0 , move = 10 ,t = true
-//console.log("CODE BY KRISHNA");
-//window.alert("CODE BY KRISHNA")
-function a(x,y){
-    //console.log(t);
-        if(t == true){
-            document.getElementById("q").style.border = "solid"
-        document.getElementById("q").style.left =  `${x}px`
-        document.getElementById("q").style.top =  `${y}px`
-        style()
-        }
-        else{
-           document.getElementById("w").style.left =  `${x}px`
-        document.getElementById("w").style.top =  `${y}px`
-        document.getElementById("w").style.border = "solid"
-        style2()
-        }
-}
-function store(event,){
-    z = event.key
-    
-    if(z == "ArrowDown"){
-        y += move
-    }
-    if(z == "ArrowUp"){
-        y -= move
-    }
-    if(z == "ArrowLeft"){
-        x -= move
-    }
-    if(z == "ArrowRight"){
-        x += move
-    }
-   a(x,y)
-}
- function style(){
-    m = document.getElementById("q")
-    m.textContent = "I AM MOVING"
-  } 
-  function style2(){
-    n = document.getElementById("w")
-    n.textContent = "I AM MOVING"
-  } 
-function stop(){
-    if(t == true){
-        m = document.getElementById("q")
-        m.textContent = "MOVE ME"
-        m.style.border = "none"
-    }
-    else{
-        n = document.getElementById("w")
-        n.textContent = "MOVE ME" 
-         n.style.border = "none"
+let x = 0, y = 0, move = 10, t = true;
+
+function a(x, y) {
+    if (t) {
+        const q = document.getElementById("q");
+        q.style.position = "absolute";
+        q.style.left = `${x}px`;
+        q.style.top = `${y}px`;
+        q.style.border = "2px solid white";
+        q.textContent = "I AM MOVING";
+    } else {
+        const w = document.getElementById("w");
+        w.style.position = "absolute";
+        w.style.left = `${x}px`;
+        w.style.top = `${y}px`;
+        w.style.border = "2px solid white";
+        w.textContent = "I AM MOVING";
     }
 }
-document.addEventListener("keydown",store)
-document.getElementById("w").onclick = function select(){
-    t = false;
-    
+
+function store(event) {
+    const z = event.key;
+    if (z === "ArrowDown") y += move;
+    if (z === "ArrowUp") y -= move;
+    if (z === "ArrowLeft") x -= move;
+    if (z === "ArrowRight") x += move;
+    a(x, y);
 }
-document.getElementById("q").onclick = function select(){
-    t = true;
+
+function stop() {
+    if (t) {
+        const q = document.getElementById("q");
+        q.textContent = "MOVE ME";
+        q.style.border = "none";
+    } else {
+        const w = document.getElementById("w");
+        w.textContent = "MOVE ME";
+        w.style.border = "none";
+    }
 }
-document.addEventListener("keyup",stop)
+
+document.getElementById("q").onclick = function () { t = true; }
+document.getElementById("w").onclick = function () { t = false; }
+
+document.addEventListener("keydown", store);
+document.addEventListener("keyup", stop);

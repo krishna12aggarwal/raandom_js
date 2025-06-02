@@ -9,40 +9,34 @@ function crash(){
   }
   style();
 }
-function style(){
-    x.textContent = "💀 CRASHED 💀"
-   
+function style() {
+  x.textContent = "💀 CRASHED 💀";
+  x.style.backgroundColor = "#550000";
+  x.style.color = "#ff0000";
+  x.style.fontWeight = "bold";
+  x.style.fontSize = "2rem";
 }
-function time(){
-    time = new Date()
-    q = "Pm"
-    hour = time.getHours()
-    minute = time.getMinutes()
-    second = time.getSeconds()
-    //mili = time.getMilliseconds()
-    if(hour>12){
-      q = "Pm"
-      
-    }
-    if(hour<12){
-      q = "Am"
-    }
-    if(hour>12){
-      hour = hour-12
-    }
-    y.textContent = hour+":"+minute+":"+second+" "+q
-   
+
+function time() {
+  const time = new Date();
+  let q = "AM";
+  let hour = time.getHours();
+  let minute = time.getMinutes();
+  let second = time.getSeconds();
+
+  if (hour >= 12) {
+    q = "PM";
+    if (hour > 12) hour -= 12;
+  }
+  if (hour === 0) hour = 12;
+
+  // Format with leading zeros
+  minute = minute < 10 ? '0' + minute : minute;
+  second = second < 10 ? '0' + second : second;
+
+  y.textContent = `${hour}:${minute}:${second} ${q}`;
 }
-setInterval(time,500)
 
-
-
-
-
-
-
-
-
-
+setInterval(time, 500);
 
 x.onclick = crash;

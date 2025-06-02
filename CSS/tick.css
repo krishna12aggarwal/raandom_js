@@ -1,44 +1,100 @@
-#main{
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
-    
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#main2{
-    display: flex;
-    justify-content: center;
-    
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#main3{
-    display: flex;
-    justify-content: center;
-    
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0;
+  box-shadow: 0 0 30px #00000088;
 }
-#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9{
-   border: solid;
-    height: 56px;
-    width: 56px;
-   text-align: center;
-   padding: 0%;
-   margin: 0%;
+
+.cell {
+  border: 3px solid #fff;
+  background-color: #1c1c1c;
+  color: #00ffcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
-#q1,#q4,#q7{
-    border-left: none;
-    border-bottom: none;
+
+.cell:hover {
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
 }
-#q1,#q2,#q3{
-    border-top: none;
-    border-right: none;
+
+#q1, #q2, #q3 {
+  border-top: none;
 }
-#q2,#q5,#q8{
-    border-bottom: none;
+#q1, #q4, #q7 {
+  border-left: none;
 }
-#q4,#q5,#q6,#q7,#q8,#q9{
-    border-right: none;
+#q3, #q6, #q9 {
+  border-right: none;
 }
-#q3,#q6,#q9{
-    border-bottom: none;
+#q7, #q8, #q9 {
+  border-bottom: none;
 }
-#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9:hover{
-    cursor: pointer;
+
+#topRightContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+#scoreboard {
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 2px dashed #555;
+  border-radius: 12px;
+  width: max-content;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#status {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
 }

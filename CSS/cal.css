@@ -1,12 +1,61 @@
-button{
-    font-size: 50px;
-    background-color: rgb(255, 255, 0);
-    border: 20px;
-    border-radius: 50%;
-    border-color: black;
-    
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  flex-direction: column;
 }
-button:hover{
-    cursor: pointer;
-    background-color: red;
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#out {
+  background: #333;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-radius: 4px;
+  width: 320px;
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.number {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 10px;
+}
+
+
+.opet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  background: #555;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #777;
 }
